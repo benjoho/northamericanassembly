@@ -1,0 +1,276 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="The free Easier Iphone web template, Andriod web template, Smartphone web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<!----webfonts--->
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!---//webfonts--->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<!----- start-header---->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							<a href="#"><img src="images/logo.png" title="doctor" /></a>
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="index.html"  style="color: #0052A5">Home </a></li>
+								
+								<li><a href="#services" class="scroll" style="color: #0052A5">our services</a></li>
+							
+								<li><a href="#contact" class="scroll" style="color: #0052A5">Contact us</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/menu-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clear"> </div>
+					</div>
+				</div>
+			</div>
+		<!----- //End-header---->
+		<!----start-slider-script---->
+			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+			
+			    <div class="clear"> </div>
+			<!----- //End-slider---->
+			<!---- about ---->
+			<div id="about" class="about">
+				<div class="container">
+					<div class="header about-header text-center">
+					  <h2>Prototype</h2>
+					</div>
+					<!---- About-grids ---->
+					<div class="about-grids">
+						<div class="col-md-4">
+							<div class="about-grid">
+								<img src="/smartphone 3/images/prorooror.png" />
+								
+								<div class="about-grid-info text-center">
+								  <h3><a href="#">Prototype Services</a></h3>
+								  <p>Welding- Vibration, Ultrasonic, Spin, Hot Plate</p>
+								  <p> Pressure decay &amp; mass flow leak testing</p>
+								  <p> SLA assembly and mock ups </p>
+								  <p>CNC modify parts</p>
+								  <p> Mass Flow Pressure / Vacuum Leak Testing<br>
+							      </p>
+								  <p>Glue and screw first prototypes </p>
+								  <p>Thermo cycling </p>
+								  <p>Fatigue testing </p>
+								  <p>Vacuum forming </p>
+								  <p>Carbon fiber lay up</p>
+								  <p> Failure burst testing </p>
+								  <p>Heated insert failure analysis</p>
+								  <p> Electrical and continuity testing </p>
+								  <p>&nbsp;</p>
+								  <p>&nbsp;</p>
+								</div>
+							</div>
+						</div>
+						
+					<!---- About-grids ---->
+				</div>
+				
+			</div>
+			<!---- about ---->
+			<!--- services --->
+			<div id="services" class="services">
+				<div class="container">
+					<div class="header services-header text-center">
+						<h2>our services</h2>
+						
+					</div>
+					<!---- service-grids--->
+					<div id="services" class="services" >
+				<div class="container" >
+					<div class="header services-header text-center" >
+						<h2>our services</h2>
+						
+					</div>
+					<!---- service-grids--->
+					<div class="service-grids" >
+						<div class="col-md-3" >
+							<div class="service-grid text-center" >
+								<a href="/smartphone 3/paint.html" ><span class="s1-icon" > </span></a>
+								<h3><a href="/smartphone 3/paint.html" >Paint</a></h3>
+							</div>
+						</div>
+						<div class="col-md-3" >
+							<div class="service-grid text-center" >
+								<a href="/smartphone 3/prototype.html" ><span class="s2-icon" > </span></a>
+								<h3><a href="/smartphone 3/prototype.html" >Prototype</a></h3>
+							</div>
+						</div>
+						<div class="col-md-3" >
+							<div class="service-grid text-center" >
+								<a href="/smartphone 3/production.html" ><span class="s3-icon" > </span></a>
+								<h3><a href="/smartphone 3/production.html" >Production</a></h3>
+							</div>
+						</div>
+						<div class="col-md-3" >
+							<div class="service-grid text-center" >
+								<a href="welding.html" ><span class="s4-icon" > </span></a>
+								<h3><a href="welding.html" >Welding </a></h3>
+							</div>
+						</div>
+						<div class="clear" > </div>
+					</div>
+					<!----//service-grids--->
+				</div>
+				
+			</div>
+					<!----//service-grids--->
+				</div>
+				
+			</div>
+			<!--- services --->
+			<!--- team --->
+			
+					<!---//teammember-grids ---->
+				</div>
+			</div>
+			<!--- team --->
+			<!---- contact ---->
+			<div id="contact" class="contact">
+				<div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1600186.2619317076!2d-102.69625001610805!3d38.43306521805143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sin!4v1404490159176" > </iframe>
+					<div class="contact-info">
+						<div class="container">
+						<!---- contact-grids ---->
+						<div class="contact-grids">
+							<h3>contact us</h3>
+							<div class="col-md-5 contact-grid-left">
+								<h4>contact information</h4>
+								<ul>
+									<li><span class="cal"> </span><label>Monday - Friday :</label>
+								    <small>8:00 AM to 4:30 PM</small></li>
+									<li><span class="pin"> </span><label>Address :</label>
+								    <small>4325 Giddings Road, Auburn Hills, MI 48326</small></li>
+									<li><span class="phone"> </span><label>Phone :</label>
+								    <small>(248) 335-6702</small></li>
+									<li><span class="fax"> </span><label>Fax :</label>
+								    <small>(248) 335-6958</small></li>
+									<li><span class="mail"> </span><label>Email :</label>
+								    <small> tom@naassembly.com</small></li>
+								</ul>
+							</div>
+							<div class="col-md-7 contact-grid-right">
+								<h4>leave us a message</h4>
+								<form>
+									<input type="text" value="Name:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name:';}">
+									<input type="text" value="Email:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email:';}">
+									<input type="text" value="Phone No:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone No:';}">
+									<textarea rows="2" cols="70" onfocus="if(this.value == 'Message:') this.value='';" onblur="if(this.value == '') this.value='Message:';">Message:</textarea>
+									<input type="submit" value="SEND MESSAGE" />
+								</form>
+							</div>
+							<div class="clear"> </div>
+						</div>
+						<!---- contact-grids ---->
+					</div>
+					</div>
+				</div>
+			</div>
+			<!---- contact ---->
+			<div class="clear"> </div>
+			<!--- copy-right ---->
+			<div class="copy-right">
+				<div class="container">
+				<div class="copy-right-left">
+					
+					<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+				
+				<div class="clear"> </div>
+			</div>
+			</div>
+			<!--- copy-right ---->
+	</body>
+</html>
+

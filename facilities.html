@@ -1,0 +1,55 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <link rel="stylesheet" type="text/css" href="css/facilities.css" />
+    <script src="sss/sss.min.js"></script>
+    <link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
+    <script>
+      $(function(){
+        $("#header-container").load("header.html")
+        $("#footer-container").load("footer.html");
+      });
+    </script>
+    <script>
+      jQuery(function($) {
+      $('.slider').sss();
+      });
+    </script>
+    <title>Facilities</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header-container">
+      </div>
+      <div id="content">
+        <div id="content-container">
+          <h1> Our Facilities: </h1>
+          <img src="images/logoforpages.png" />
+          <h2> Headquarters/Plant #1 </h2>
+          <div class="slider">
+            <img src="images/building-1/image-1.jpg" />
+            <img src="images/building-1/image-2.jpg" />
+          </div>
+          <div id="info">
+            <ul>
+              <li>42,000 ft²</li>
+            </ul>
+          </div>
+          <h2> Plant #2 </h2>
+          <div class="slider">
+            <img src="images/building-2/image-1.jpg" />
+          </div>
+          <div id="info">
+            <ul>
+              <li>14,000 ft²</li>
+            </ul>
+          </div>
+      </div>
+     </div>
+      <div id="footer-container">
+      </div>
+  </body>
+</html>

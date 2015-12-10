@@ -1,0 +1,275 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+html,
+body {
+  background-image: url("../images/background.jpg");
+  background-size:   cover;                      /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+	margin:0;
+	padding:0;
+  font-family: Helvetica;
+  font-weight: 300;
+}
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+#header {
+	background: rgba(0,0,0,0.9);
+	padding:15px;
+  min-width: 950px;
+  height: 15px;
+  margin: 0px auto;
+}
+#header-container{
+  z-index: 100;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+#content {
+  min-width: 1104px;
+  text-align: center;
+	padding-bottom:100px; /* Height of the footer element */
+}
+#footer {
+	background: rgba(0,0,0,0.9);
+	width:100%;
+	height:45px;
+	left:0;
+}
+#navigation ul{
+  width: 100%;
+  text-decoration: none;
+  background:#fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+  background:rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+  list-style:none;
+  position:absolute;
+  left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+#navigation ul li{
+  color: white;
+  margin-left: -35px;
+  float:none;
+}
+
+#footer-container {
+  width: 100%;
+  bottom:0;
+  position: fixed;
+}
+#copyright-text{
+  font-weight: 300;
+  margin-left: 4px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  letter-spacing: .1em;
+  font-size: .75em;
+}
+#logo{
+  font-weight:bold;
+  margin-top: -3px;
+  font-family: 'Droid Sans', sans-serif;
+  float:left;
+  font-size: 14pt;
+  color: white;
+  width: 250px;
+}
+#logo a {
+  text-decoration: none;
+  color: white;
+}
+#navigation{
+  z-index: 5;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#navigation li{
+  color: white;
+  font-weight:300;
+  font-size: 12pt;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline;
+  width: 100px;
+}
+#navigation li ul{
+	background: rgba(0,0,0,0.9);
+	visibility: hidden;
+  float: left;
+  padding-top: 7px;
+  width:130px;
+  height: 365px;
+	position: absolute;
+  transition: visibility 0.25s ease-in;
+  margin-top:14px;
+	left: 430px;
+	z-index: 999;
+}
+#navigation li ul li{
+  height: 73px;
+  width: 120px;
+  display: block;
+  text-align: center;
+}
+#navigation li ul li span{
+  margin-top: -15px;
+  min-height: 10px;
+  font-size: 9pt;
+  display: block;
+}
+#navigation li ul li a:hover{
+  color: red;
+}
+#navigation li ul li img{
+  padding-bottom: 20px;
+  height: 50px;
+  width: 120px;
+}
+
+#navigation li:hover > ul,
+#navigation li ul:hover {
+   visibility: visible;
+}
+
+
+#navigation li a{
+  text-decoration: none;
+  color: white;
+}
+#navigation li a:hover{
+  text-decoration: none;
+  color: #0052A5;
+}
+#content-container{
+  text-align:left;
+  margin-top: 60px;
+  display: inline-block;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: grey;
+  border-width: 1px;
+  width: 90%;
+  height: auto;
+  padding-bottom: 5%;
+  max-width: 1104px;
+  min-width: 1104px;
+  background: rgba(0,0,0,0.75);
+}
+#logo-img {
+  float: left;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+ img#logo-img{
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: .25s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: .25s;
+  transition-property: transform;
+  transition-duration: .25s;
+  transform-origin: 63% 63%;
+}
+ img#logo-img:hover{
+  cursor: default;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: .35s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: rotate;
+  -moz-animation-duration: .35s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  animation-name: rotate;
+  animation-duration: .35s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotate {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+#logo-text {
+  padding-left: 2%;
+  padding-top: 7%;
+  float:left;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  font-style: italic;
+  font-family: Times;
+  font-size: 22pt;
+  color: #C0C0C0;
+}
+#slogan {
+  text-align: right;
+  padding-right: 120px;
+  padding-top: 7.5%;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16pt;
+  font-family: 'Droid Sans', sans-serif;
+  color: white;
+}
+#slogan-2 {
+  text-align: right;
+  padding-right: 120px;
+  padding-top: 20px;
+  margin-bottom: 0;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 15pt;
+  text-transform: uppercase;
+  font-family: Garamond;
+  color: #8E8E8E;
+}
+#map {
+  float: left;
+  width: 300px;
+  height: 300px;
+  color: white;
+  padding-left: 5%;
+}
+#building {
+  float: right;
+  width: 580px;
+  height: 350px;
+  padding-right: 5%;
+}
+.slider {
+  z-index: -10;
+  padding-left: 62px;
+  padding-right: 62px;
+  width: 980px;
+  min-width: 700px;
+  height: 387px;
+  margin-top: 100px;
+}
+#lower-container {
+  padding-top: 40px;
+  width: 100%;
+  text-align: center;
+}
+#icon-image {
+  padding-left: -15px;
+  width: 166;
+}
+.service-title {
+  padding: 10px;
+  color: white;
+  font-size: 28pt;
+  text-align: center;
+}

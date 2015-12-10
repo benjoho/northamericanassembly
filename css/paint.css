@@ -1,0 +1,44 @@
+h1 {
+  font-size: 15pt;
+  font-weight: 400;
+  color: #0052A5;
+}
+h2 {
+  font-size: 13pt;
+  font-weight:bold;
+  color: rgb(224, 22, 43);
+}
+h3 {
+  font-weight:400;
+  color: white;
+}
+li {
+  font-size: 11pt;
+  font-weight: 300;
+  color: white;
+}
+p {
+  font-size: 11pt;
+  font-weight: 300;
+  color: white;
+}
+img {
+  padding-bottom: 10px;
+}
+#right {
+  padding-top: 5%;
+  float: left;
+  max-width: 300px;
+  text-align: right;
+}
+
+#left {
+  float: left;
+  text-align: left;
+  padding: 5% 5% 5% 10%;
+  width: 400px;
+}
+#middle-container {
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,44 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <link rel="stylesheet" type="text/css" href="css/services.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="js/photoGallery.js"></script>
+    <script>
+      $(function(){
+        $("#header-container").load("header.html");
+        $("#footer-container").load("footer.html");
+      });
+    </script>
+    <title>Photo Gallery</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header-container">
+      </div>
+      <div id="content">
+        <div id="content-container">
+          <div class="service" id="paint">
+            <div class="service-title"> Paint Photos: </div>
+            <iframe src="https://drive.google.com/embeddedfolderview?id=0B7hI25UEdq8leXVYbWpFYmJjem8#grid" width="100%" height="600" frameborder="0"></iframe>
+          </div>
+          <div class="service" id="production">
+            <div class="service-title"> Production Photos: </div>
+            <iframe src="https://drive.google.com/embeddedfolderview?id=0B7hI25UEdq8lSUhSQ0ZPMFhOeDQ#grid" width="100%" height="600" frameborder="0"></iframe>
+          </div>
+          <div class="service" id="prototype">
+            <div class="service-title"> Prototype Photos: </div>
+            <iframe src="https://drive.google.com/embeddedfolderview?id=0B7hI25UEdq8lakV1WHoyd1p3MnM#grid" width="100%" height="600" frameborder="0"></iframe>
+          </div>
+          <div class="service" id="assembly">
+            <div class="service-title"> Service Photos: </div>
+            <iframe src="https://drive.google.com/embeddedfolderview?id=0B7hI25UEdq8lbVRpSGdmZzVDblE#grid" width="100%" height="600" frameborder="0"></iframe>
+          </div>
+      </div>
+     </div>
+      <div id="footer-container">
+      </div>
+  </body>
+</html>
